@@ -1,0 +1,124 @@
+/* .navbar{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    top: 0%;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 55px;
+    transition: 1s;
+} */
+
+.navbar{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 55px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+
+.flexDiv{
+    position: flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: left;
+    /* border: 2px solid white; */
+}
+
+.navbarName{
+    z-index: 2;
+    color: white;
+    /* border: 2px solid white; */
+}
+
+.navbarName p{
+    width: 9.8rem;
+    border-bottom: 1px solid white;
+    padding: 0.2rem;
+    margin-left: 1rem;
+}
+
+.navbarButtons{
+    /* border: 2px solid white; */
+    top: 0%;
+    gap: 2rem;
+    display: flex;
+    height: 55px;
+    width: 70%;
+}
+
+.bar{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 55px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.bar .navbarBtn{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 1rem;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.bar .navbarBtn:hover{
+    border-bottom-color: black;
+}
+
+.bar .navbarName p{
+    color: black;
+    border-bottom-color: black;
+}
+
+.navbarBtn{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 1rem;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.navbarBtn:hover{
+    border-bottom-color: white;
+}
+
+@media only screen and (max-width: 800px){
+    .navbar {
+            gap: 3rem;
+        }
+}
+
+@media only screen and (max-width: 280px) {
+    .navbar {
+        gap: 0rem;
+    }
+        .navbarBtn {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border: 1px solid;
+            border-color: rgba(0, 0, 0, 0);
+            padding: 0rem;
+            font-size: 16px;
+            transition: 0.5s;
+        }
+}

@@ -1,0 +1,40 @@
+.mainDiv {
+    /* padding-bottom: 5rem; */
+    background-color: #fdf5e2;
+}
+
+.project_heading{
+    /* padding-top: 5rem; */
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.projectDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.linkProject{
+    margin-top: 3rem;
+    width: 7rem;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid hsl(205, 78%, 60%);
+    border-radius: 2rem;
+    color: hsl(205, 78%, 60%);
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 0px 0px 10px 1px hsl(205, 78%, 60%);
+}
+
+.linkProject:hover{
+    color: white;
+    background-color: hsl(205, 78%, 60%);
+    box-shadow: 0px 0px 0px 0px hsl(205, 78%, 60%);
+}
