@@ -217,7 +217,7 @@
     }
 }
 
-@media (hover: none){
+@media only screen and (max-width: 800px){
     /* #btnControl:checked+label>div {
         transform: scale(1.5);
         width: 5rem;
