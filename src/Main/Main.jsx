@@ -26,7 +26,7 @@ const Main = () => {
         <div id="project" className="projectDiv">
             <h1  className='allHeadings'>Click here to see my projects</h1>
             <div className="underline"></div>
-            <Link className="linkProject" to="/projects" target="_blank">Projects</Link>
+            <Link className="linkProject" to="/projects">Projects</Link>
         </div>
         {/* <Router>
             <Routes>
