@@ -8,13 +8,6 @@ import './Project.css'
 
 
 const Project = () => {
-    const [readMore, setReadMore] = useState('')
-    const normal = {
-        display:'inline'
-    }
-    const hidden = {
-        display: 'none'
-    }
     return(
         <div id="project" className="mainProject">
 

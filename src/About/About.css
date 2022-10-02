@@ -11,10 +11,10 @@
 .aboutInfo{
     width: 35%;
     padding: 3rem;
-    padding-left: 7rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-left: 7rem;
 }
 
 
@@ -32,4 +32,71 @@
     border: none;
     border-radius: 50%;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 7rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .about{
+        gap: 8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about {
+        gap: 5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .img-parent{
+        width: 15rem;
+        height: 20rem;
+    }
+    .img{
+        margin-left: 5rem;
+    }
+    .aboutInfo{
+        width: 70%;
+        padding: 0rem;
+        gap: 2rem;
+        padding-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .img {
+        margin-left: 4rem;
+    }
+    .aboutInfo {
+        width: 75%;
+        padding: 0rem;
+        gap: 2rem;
+        padding-left: 3rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .img-parent {
+        width: 12rem;
+        height: 15rem;
+    }
+    .img {
+        margin-left: 3rem;
+    }
+    .aboutInfo {
+        width: 75%;
+        padding: 0rem;
+        gap: 2rem;
+        padding-left: 3rem;
+    }
+    .aboutInfo a{
+        width: 13rem;
+        height: 3rem;
+    }
 }

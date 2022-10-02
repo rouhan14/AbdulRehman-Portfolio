@@ -1,23 +1,27 @@
 .home{
+    background-image: url('../Assets/home8.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12.3rem;
+}
+
+.info-parent{
     justify-content: center;
     flex-direction: column;
     width: 100%;
     /* margin-top: 2.8%; */
     display: flex;
     align-items: center;
-    background-image: url('../Assets/home8.webp');
-    padding-top: 12.3rem;
-    padding-bottom: 12.3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white;
     height: 17rem;
 }
 
 .nvc{
     position: relative;
-    right: 34rem;
+    top: 80px;
+    right: 0px;
+    /* right: 34rem; */
     /* bottom: 1rem; */
     width: auto;
     height: auto;
@@ -29,14 +33,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-color: black; */
-    width: 15rem;
-    height: 10rem;
+    width: 13rem;
+    height: 8rem;
+    z-index: 1;
 }
 
 .nvc p{
     color: white;
+    /* color: black; */
     margin-left: 1rem;
+    width: 9rem;
 }
 
 .container {
@@ -49,14 +55,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.info>:nth-child(3){
     color: white;
 }
 
 .contactBtn{
     gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .linkBtn{
@@ -91,4 +98,43 @@
 .instaIcon{
     font-size: 1rem;
     color: white;
+}
+
+
+@media only screen and (max-width: 1150px){
+    .nvc{
+        font-size: small;
+    }
+    .nvcImg{
+        width: 10rem;
+        height: 6rem;
+    }
+    .info-parent{
+        padding-top: 50rem;
+    }
+    .info {
+        /* font-size: 10px; */
+        padding-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nvc {
+        font-size: 8px;
+    }
+    .nvc p{
+        margin-left: 0.5rem;
+    }
+    .nvcImg {
+        width: 5rem;
+        height: 3rem;
+    }
+    .info{
+        font-size: 10px;
+        padding-top: 7rem;
+    }
+    .linkBtn{
+        width: 30px;
+        height: 30px;
+    }
 }

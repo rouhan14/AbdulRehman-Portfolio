@@ -1,8 +1,7 @@
 import {
-  Link,
+    Link,
 } from "react-router-dom";
 import React from "react";
-import Project from '../Project/Project'
 import Navbar from '../NavBar/Navbar';
 import Home from '../Home/Home';
 import About from '../About/About'
@@ -27,7 +26,7 @@ const Main = () => {
         <div id="project" className="projectDiv">
             <h1  className='allHeadings'>Click here to see my projects</h1>
             <div className="underline"></div>
-            <Link className="linkProject" to="/projects">Projects</Link>    
+            <Link className="linkProject" to="/projects" target="_blank">Projects</Link>
         </div>
         {/* <Router>
             <Routes>

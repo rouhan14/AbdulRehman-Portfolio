@@ -46,38 +46,9 @@
     margin-top: 3rem;
 }
 
-.box{
-    height: 13rem;
-    width: 70%;
-    display: flex;
-    /* margin-left: 2rem; */
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 1rem;
-    z-index: 1;
-    /* background-color: rgb(255, 255, 255); */
-    background-color: white;
-    color: black;
-    /* position: relative; */
-    transition: 0.5s;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
 /* .box_grid>:nth-child(even){
     align-self: flex-end;
 } */
-
-.box:hover {
-    transform: scale(1.2);
-    height: 22rem;
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
-    /* background-color: #ffffff9a; */
-}
 
 .desciption {
     display: none;
@@ -90,7 +61,12 @@
     /* transition-delay: 30s; */
 }
 
-
+#btnControl {
+    display: none;
+}
+#techDataControl {
+    display: none;
+}
 
 .box .content{
     display: none;
@@ -99,42 +75,6 @@
     text-align: left;
     position: relative;
     
-}
-
-.box:hover .desciption {
-    display: contents;
-    text-align: center;
-    justify-content: center;
-    transition: 10s;
-    transition-delay: 10s;
-}
-
-.box:hover h2 {
-    display: none;
-}
-
-.box:hover .content{
-    display: contents;
-    text-align: left;
-    justify-content: left;
-    font-size: 75%;
-    margin: -0.4;
-    padding: 0%;
-}
-
-.box .edIcon {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    border-radius: 50%;
-    border: 1px solid;
-    padding: 2rem;
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
-}
-
-.box:hover .edIcon {
-    display: none;
 }
 
 .box .content .samsung{
@@ -156,8 +96,13 @@
 }
 
 .certificate{
-    background-color: white;
-    color: black;
+    background-image: none;
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     width: 20rem;
     height: 10rem;
     border-radius: 5px;
@@ -173,35 +118,230 @@
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.certificate:hover{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 25rem;
-    height: 15rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    color: black;
-    box-shadow: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.certificate:hover p{
-    display: none;
-}
-
 .cert_img{
     visibility: hidden;
     border-radius: 5px;
 }
 
-.certificate:hover .cert_img{
-    visibility: visible;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+@media (hover: hover){
+    .certificate:hover .cert_img {
+        visibility: visible;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .certificate:hover {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: lighten;
+        width: 25rem;
+        height: 15rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        color: black;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certificate:hover p {
+        display: none;
+    }
+
+    .box:hover .edIcon {
+        display: none;
+    }
+
+    .box:hover .desciption {
+        display: contents;
+        text-align: center;
+        justify-content: center;
+        transition: 10s;
+        transition-delay: 10s;
+    }
+
+    .box:hover h2 {
+        display: none;
+    }
+
+    .box:hover .content {
+        display: contents;
+        text-align: left;
+        justify-content: left;
+        font-size: 75%;
+        margin: -0.4;
+        padding: 0%;
+    }
+    .box:hover {
+        transform: scale(1.2);
+        height: 23rem;
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+        /* background-color: #ffffff9a; */
+    }
+    .box {
+        height: 15rem;
+        width: 25rem;
+        display: flex;
+        /* margin-left: 2rem; */
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        z-index: 1;
+        /* background-color: rgb(255, 255, 255); */
+        background-color: white;
+        color: black;
+        /* position: relative; */
+        transition: 0.5s;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    .box .edIcon {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        border-radius: 50%;
+        border: 1px solid;
+        padding: 2rem;
+        color: rgba(0, 0, 0, 0.5);
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (hover: none){
+    /* #btnControl:checked+label>div {
+        transform: scale(1.5);
+        width: 5rem;
+        height: 5rem;
+    } */
+    #btnControl:checked+label{
+        transform: scale(1.5);
+        transform-origin: center;
+        height: 100%;
+    }
+    #btnControl:checked+label> .content{
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        font-size: 40%;
+        gap: 0rem;
+        /* padding: 2rem; */
+    }
+    #btnControl:checked+label> .desciption{
+        display: contents;
+        text-align: center;
+        justify-content: center;
+        font-size: 40%;
+        transition: 10s;
+        transition-delay: 10s;
+    }
+    #btnControl:checked+label> .edIcon{
+        display: none;
+    }
+    #btnControl:checked+label> h2{
+        display: none;
+    }
+    .box {
+        height: 7rem;
+        width: 12rem;
+        display: flex;
+        /* margin-left: 2rem; */
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        padding: 0.5rem;
+        padding-top: 1rem;
+        border-radius: 1rem;
+        z-index: 1;
+        /* background-color: rgb(255, 255, 255); */
+        background-color: white;
+        color: #333;
+        /* position: relative; */
+        transition: 0.5s;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    .box .edIcon {
+        border: 1px solid;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: rgba(0, 0, 0, 0.5);
+        border-color: rgba(0, 0, 0, 0.5);
+    }
+    .box .heading{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #techDataControl:checked+label {
+        transform: scale(1.5);
+        transform-origin: center;
+        height: 100%;
+    }
+
+    #techDataControl:checked+label>.content {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        font-size: 40%;
+        gap: 0rem;
+        /* padding: 2rem; */
+    }
+
+    #techDataControl:checked+label>.desciption {
+        display: contents;
+        text-align: center;
+        justify-content: center;
+        font-size: 40%;
+        transition: 10s;
+        transition-delay: 10s;
+    }
+
+    #techDataControl:checked+label>.edIcon {
+        display: none;
+    }
+
+    #techDataControl:checked+label>h2 {
+        display: none;
+    }
+    .cert_grid {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+    .certificate{
+        background-blend-mode: darken;
+        background: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18rem;
+        height: 15rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        box-shadow: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .Edu_parent .oneLiner {
+        margin-top: 3rem;
+        text-align: center;
+    }
 }

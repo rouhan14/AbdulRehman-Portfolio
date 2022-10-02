@@ -31,21 +31,18 @@ const Contact = () => {
         }
 
     }
-  return (
+    return (
     <div id='contact' className='main_form_div'>
-        <h2 className='allHeadings'>Let's Connect</h2>
+        <h2 className='allHeadings'>Lets Connect</h2>
         <div className='underline'></div>
         <form className='form_div' action="" ref={form}>
-            <label className='label' htmlFor="name">Enter your name</label>
-            <input className='input' type="text" name='name' value={formData.name} onChange={(e)=>DataFiller(e)}/>
-            <label className='label' htmlFor="email">Enter your email</label>
-            <input className='input' type="email" name='email' value={formData.email} onChange={(e)=>DataFiller(e)}/>
-            <label className='label' htmlFor="message">Type your message</label>
-            <textarea className='message' type="text" name='message' value={formData.message} onChange={(e)=>DataFiller(e)}/>
+            <input className='input' type="text" name='name' value={formData.name} onChange={(e)=>DataFiller(e)} placeholder='Enter your Name' />
+            <input className='input' type="email" name='email' value={formData.email} onChange={(e)=>DataFiller(e)} placeholder='Enter your Email' />
+            <textarea className='message' type="text" name='message' value={formData.message} onChange={(e)=>DataFiller(e)} placeholder='Enter your Message' />
             <button className='btn' onClick={sendEmail}>Send</button>
         </form>
     </div>
-  )
+    )
 }
 
 export default Contact
